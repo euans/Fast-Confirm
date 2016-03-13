@@ -50,8 +50,8 @@
 			return this.each(function () {
 				var trigger = this,
 					$trigger = $(this),
-					$confirmYes = $('<button class="' + params.fastConfirmClass + '_proceed">' + params.proceedText + '</button>'),
-					$confirmNo = $('<button class="' + params.fastConfirmClass + '_cancel">' + params.cancelText + '</button>'),
+					$confirmYes = $('<button class="' + params.fastConfirmClass + '_proceed btn btn-success"><i class="icon icon-ok icon-white"></i> ' + params.proceedText + '</button>'),
+					$confirmNo = $('<button class="' + params.fastConfirmClass + '_cancel btn btn-danger"><i class="icon icon-remove icon-white"></i> ' + params.cancelText + '</button>'),
 					$confirmBox = $('<div class="' + params.fastConfirmClass + '"><div class="' + params.fastConfirmClass + '_arrow_border"></div><div class="' + params.fastConfirmClass + '_arrow"></div>' + params.questionText + '<br/></div>'),
 					$arrow = $('div.' + params.fastConfirmClass + '_arrow', $confirmBox),
 					$arrowBorder = $('div.' + params.fastConfirmClass + '_arrow_border', $confirmBox),
@@ -189,7 +189,7 @@
 		close: function () {
 			return this.each(function () {
 				var $this = $(this);
-				$this.data('fast_confirm.box').remove();
+				try{$this.data('fast_confirm.box').remove();}catch(err){};
 				$this.removeData('fast_confirm.box').removeClass($this.data('fast_confirm.params.fastConfirmClass') + '_trigger');
 			});
 		}

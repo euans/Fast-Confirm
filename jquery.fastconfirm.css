@@ -135,8 +135,8 @@
 
 
 /* BUTTONS */
-
-.fast_confirm button {
+.fast_confirm button { margin:10px 5px; }
+/*.fast_confirm button {
 	margin: 10px;
 	padding: 5px 10px;
     
@@ -147,10 +147,10 @@
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-}
+}*/
 
 /* Proceed button */
-.fast_confirm button.fast_confirm_proceed {
+/*.fast_confirm button.fast_confirm_proceed {
     border: 1px solid #128123;
     
     color: #fff;
@@ -182,10 +182,10 @@
 .fast_confirm button.fast_confirm_proceed:hover {
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #00dd00), color-stop(1, #00aa00) );
     background: -moz-linear-gradient( center top, #00dd00 20%, #00aa00 100% );
-}
+}*/
 
 /* Cancel button */
-.fast_confirm button.fast_confirm_cancel {
+/*.fast_confirm button.fast_confirm_cancel {
     border: 1px solid #128123;
     
     color: #fff;
@@ -217,4 +217,4 @@
 .fast_confirm button.fast_confirm_cancel:hover {
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #ff6666), color-stop(1, #ff2222) );
     background: -moz-linear-gradient( center top, #ff6666 20%, #ff2222 100% );
-}
+}*/
